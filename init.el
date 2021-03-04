@@ -60,3 +60,17 @@ the newly created FILE."
       (deft-whole-filter-regexp)
       "\n#+FILETAGS: \n\n")
      nil file nil)))
+
+;; override deft-unused-slug function from deft.el so new filenames are created
+;; using utc timestamp
+(defun deft-unused-slug ()
+  "Return an unused filename slug (short name) in `deft-directory'."
+  (let* ((slug (format-time-string deft-new-file-format nil t))
+         (fmt (concat slug "_%d"))
+         (counter 1)
+         (file (deft-absolute-filename slug)))
+    (while (or (file-exists-p file) (get-file-buffer file))
+      (setq counter (1+ counter))
+      (setq slug (format fmt counter))
+      (setq file (deft-absolute-filename slug)))
+    slug))
