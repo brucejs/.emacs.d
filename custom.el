@@ -31,7 +31,7 @@
   :Created: %(format-time-string \"%<%Y-%m-%d %a %H:%M>\")
   :END:")))
  '(org-deadline-warning-days 0)
- '(org-default-notes-file (concat org-directory "/GTD/inbox.org"))
+ '(org-default-notes-file (concat org-directory "/GTD/20210304T005926Z.org"))
  '(org-directory "~/Documents/Notes")
  '(org-hide-leading-stars t)
  '(org-log-done 'time)
