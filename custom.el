@@ -5,9 +5,39 @@
  ;; If there is more than one, they won't work right.
  '(backup-directory-alist '((".*" . "/tmp/")))
  '(calendar-week-start-day 1)
+ '(diary-file "~/Documents/Notes/GTD/diary.org")
  '(fill-column 80)
  '(global-display-line-numbers-mode t)
  '(indent-tabs-mode nil)
+ '(org-agenda-files '("~/Documents/Notes/GTD"))
+ '(org-agenda-include-deadlines t)
+ '(org-agenda-include-diary t)
+ '(org-agenda-prefix-format
+   '((agenda . "  %t%-12s")
+     (todo . " %i %-12:c")
+     (tags . "  %t%?-12s")
+     (search . " %i %-12:c")))
+ '(org-archive-location (concat org-directory "/GTD/archive.org::* Archive:"))
+ '(org-capture-templates
+   '(("i" "Inbox" entry
+      (file org-default-notes-file)
+      "* %?
+  :PROPERTIES:
+  :Created: %(format-time-string \"%<%Y-%m-%d %a %H:%M>\")
+  :END:")))
+ '(org-deadline-warning-days 0)
+ '(org-default-notes-file (concat org-directory "/GTD/inbox.org"))
+ '(org-directory "~/Documents/Notes")
+ '(org-hide-leading-stars t)
+ '(org-log-done 'time)
+ '(org-refile-allow-creating-parent-nodes 'confirm)
+ '(org-refile-targets '((org-agenda-files :maxlevel . 6)))
+ '(org-refile-use-outline-path 'file)
+ '(org-stuck-projects
+   '("+LEVEL>=2-@calendar/-DONE"
+     ("TODO" "NEXT" "NEXTACTION")
+     nil ""))
+ '(org-tags-column -80)
  '(tab-width 4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

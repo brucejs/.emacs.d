@@ -18,3 +18,10 @@
     (mapc 'frame-set-background-mode (frame-list)))
 
 (global-set-key [f5] 'brucejs/toggle-color-theme)
+
+;; org-mode
+(require 'org-habit)
+
+(global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c c") 'org-capture)
+(global-set-key (kbd "C-c l") 'org-store-link)
