@@ -30,3 +30,11 @@
 (add-to-list 'load-path "~/.emacs.d/bundle/deft")
 (require 'deft)
 (global-set-key [f8] 'deft)
+
+(defun brucejs/clip-buffer-name ()
+    "Add the name of the current buffer to the killring."
+    (interactive)
+    (kill-new (buffer-name))
+    (message (concat "\"" (buffer-name) "\" clipped!")))
+
+(global-set-key [f6] 'brucejs/clip-buffer-name)
