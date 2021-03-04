@@ -1,3 +1,6 @@
 [submodule "bundle/emacs-color-theme-solarized"]
 	path = bundle/emacs-color-theme-solarized
 	url = https://github.com/sellout/emacs-color-theme-solarized.git
+[submodule "bundle/deft"]
+	path = bundle/deft
+	url = https://github.com/jrblevin/deft.git

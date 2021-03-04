@@ -25,3 +25,8 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c c") 'org-capture)
 (global-set-key (kbd "C-c l") 'org-store-link)
+
+;; deft
+(add-to-list 'load-path "~/.emacs.d/bundle/deft")
+(require 'deft)
+(global-set-key [f8] 'deft)
