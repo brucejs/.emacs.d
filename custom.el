@@ -37,6 +37,7 @@
  '(org-log-done 'time)
  '(org-refile-allow-creating-parent-nodes 'confirm)
  '(org-refile-targets '((org-agenda-files :maxlevel . 3)))
+ '(org-startup-folded 'content)
  '(org-tags-column -80)
  '(tab-width 4))
 (custom-set-faces
