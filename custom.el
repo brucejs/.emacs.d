@@ -23,6 +23,7 @@
      (tags . "  %t%?-12s")
      (search . " %i %-12:c")))
  '(org-archive-location (concat org-directory "/GTD/20210304T010221Z.org::"))
+ '(org-archive-reversed-order t)
  '(org-capture-templates
    '(("i" "Inbox" entry
       (file org-default-notes-file)
