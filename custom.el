@@ -40,6 +40,7 @@
  '(org-refile-targets '((org-agenda-files :maxlevel . 3)))
  '(org-startup-folded 'content)
  '(org-tags-column -80)
+ '(ring-bell-function 'ignore)
  '(tab-width 4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
