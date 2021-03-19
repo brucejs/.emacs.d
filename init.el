@@ -31,6 +31,18 @@
 (require 'deft)
 (global-set-key [f8] 'deft)
 
+(defun brucejs/change-deft-directory ()
+    "Interactively change deft-directory & refresh."
+    (interactive)
+    (setq deft-directory
+        (concat org-directory "/"
+            (completing-read "Choose directory: "
+                (directory-files org-directory nil directory-files-no-dot-files-regexp))))
+    (message (concat "deft-directory set to " deft-directory))
+    (deft-refresh))
+
+(global-set-key [f7] 'brucejs/change-deft-directory)
+
 (defun brucejs/clip-buffer-name ()
     "Add the name of the current buffer to the killring."
     (interactive)
