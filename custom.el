@@ -38,6 +38,7 @@
  '(org-log-done 'time)
  '(org-refile-allow-creating-parent-nodes 'confirm)
  '(org-refile-targets '((org-agenda-files :maxlevel . 3)))
+ '(org-refile-use-outline-path t)
  '(org-startup-folded 'content)
  '(org-stuck-projects
    '("+LEVEL>=2-@calendar/-DONE"
