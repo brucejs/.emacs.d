@@ -39,6 +39,10 @@
  '(org-refile-allow-creating-parent-nodes 'confirm)
  '(org-refile-targets '((org-agenda-files :maxlevel . 3)))
  '(org-startup-folded 'content)
+ '(org-stuck-projects
+   '("+LEVEL>=2-@calendar/-DONE"
+     ("TODO" "NEXT" "NEXTACTION")
+     nil "\\<IGNORE\\>"))
  '(org-tags-column -80)
  '(ring-bell-function 'ignore)
  '(tab-width 4))
