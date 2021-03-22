@@ -19,6 +19,12 @@
 
 (global-set-key [f5] 'brucejs/toggle-color-theme)
 
+;; when running on Ubuntu WSL 2, open urls in MS Edge InPrivate browsing mode
+(when (getenv "WSLENV")
+  (setq browse-url-browser-function #'browse-url-generic
+        browse-url-generic-args     '("/c" "start" "msedge" "-inprivate")
+        browse-url-generic-program  "/mnt/c/Windows/System32/cmd.exe"))
+
 ;; org-mode
 (require 'org-habit)
 
