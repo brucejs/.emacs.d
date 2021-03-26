@@ -4,6 +4,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(backup-directory-alist '((".*" . "/tmp/")))
+ '(browse-url-browser-function 'browse-url-firefox)
+ '(browse-url-firefox-arguments '("--private-window"))
  '(calendar-week-start-day 1)
  '(deft-auto-save-interval 0)
  '(deft-default-extension "org" t)
