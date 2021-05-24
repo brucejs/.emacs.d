@@ -51,6 +51,7 @@
      (:grouptags)
      ("@agendas" . 103)
      ("@anywhere" . 97)
+     ("@church" . 117)
      ("@computer" . 99)
      ("@errands" . 101)
      ("@home" . 104)
