@@ -42,7 +42,7 @@
  '(org-refile-use-outline-path t)
  '(org-startup-folded 'content)
  '(org-stuck-projects
-   '("-@calendar/-DONE"
+   '("-@calendar-@inbox/-DONE"
      ("TODO" "NEXT" "NEXTACTION")
      nil "\\<IGNORE\\>"))
  '(org-tags-column -80)
