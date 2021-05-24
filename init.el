@@ -76,7 +76,8 @@ the newly created FILE."
              (string-equal deft-default-extension "org"))
         "#+TITLE: "))
       (deft-whole-filter-regexp)
-      "\n#+FILETAGS: \n\n")
+      "\n#+FILETAGS: \n\n* "
+      (deft-whole-filter-regexp))
      nil file nil)))
 
 ;; override deft-unused-slug function from deft.el so new filenames are created
